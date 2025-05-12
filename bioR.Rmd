@@ -33,6 +33,14 @@ data.frame(ID = names(example_sequences)[1:5],
            Sequence = unname(example_sequences[1:5]))
 ```
 
+| seq_id | sequence             |
+|--------|----------------------|
+| seq_1  | GGGCGCCCGATCCACGTAGG |
+| seq_2  | ATAAAGTCGCACGTCAGGAT |
+| seq_3  | GTCAGAACGGTAGAGTCACA |
+| seq_4  | ATTGACAAGACAGAGCTGTT |
+| seq_5  | CCGTCCGGTACCACAAAAAA |
+
 ## Reverse complement and one-hot encoding
 
 ```{r setup, include=TRUE}
@@ -47,3 +55,5 @@ encoded
 ```{r setup, include=TRUE}
 plot_gc_content(example_sequences)
 ```
+
+![](gc_content.png)
