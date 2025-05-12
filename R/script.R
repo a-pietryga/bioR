@@ -157,7 +157,8 @@ plot_gc_content <- function(sequences) {
   return(p)
 }
 
-load("example_sequences.RData")
-plot_gc_content(example_sequences)
-rc = reverse_complement_dna(example_sequences[1])
-one_hot_encode_dna(rc)
+# usage
+#load("example_sequences.RData")
+#plot_gc_content(example_sequences)
+#rc = reverse_complement_dna(example_sequences[1])
+#one_hot_encode_dna(rc)

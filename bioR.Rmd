@@ -1,6 +1,8 @@
 ---
 title: "bio_R"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 date: "2025-05-12"
 ---
 
@@ -14,21 +16,21 @@ Package contains 3 functions:
 
 ## Package download
 
-```{r setup, include=TRUE}
+```         
 if (!require(ggplot2)) install.packages("ggplot2")
 library(ggplot2)
 ```
 
 ## Data loading
 
-```{r setup, include=TRUE}
+```         
 load("example_sequences.RData")
 head(example_sequences)
 ```
 
 ## Example data
 
-```{r setup, include=TRUE}
+```         
 data.frame(ID = names(example_sequences)[1:5],
            Sequence = unname(example_sequences[1:5]))
 ```
@@ -43,7 +45,7 @@ data.frame(ID = names(example_sequences)[1:5],
 
 ## Reverse complement and one-hot encoding
 
-```{r setup, include=TRUE}
+```         
 seq1 <- example_sequences[[1]]
 rc <- reverse_complement_dna(seq1)
 encoded <- one_hot_encode_dna(rc)
@@ -52,7 +54,7 @@ encoded
 
 ## GC content plot
 
-```{r setup, include=TRUE}
+```         
 plot_gc_content(example_sequences)
 ```
 
